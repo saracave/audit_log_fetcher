@@ -1,0 +1,13 @@
+{
+  "name": "audit-log-fetcher",
+  "version": "1.0.0",
+  "description": "Fetches audit logs from LaunchDarkly API and saves to CSV",
+  "main": "fetch_audit_logs.js",
+  "scripts": {
+    "start": "node fetch_audit_logs.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.0",
+    "csv-writer": "^1.6.0"
+  }
+}
