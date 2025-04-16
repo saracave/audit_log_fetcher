@@ -4,8 +4,8 @@ const createCsvWriter = require('csv-writer').createArrayCsvWriter;
 
 const API_TOKEN = "your-api-token-here";
 const BASE_URL = "https://app.launchdarkly.com/api/v2/auditlog";
-const AFTER_TIMESTAMP = "1740751200000";  // March 1, 2025 00:00:00 UTC
-let beforeTimestamp = "1742392799999";    // March 20, 2025 23:59:59.999 UTC
+const AFTER_TIMESTAMP = "1740751200000";  // example start date March 1, 2025 00:00:00 UTC
+let beforeTimestamp = "1742392799999";    // example end date March 20, 2025 23:59:59.999 UTC
 let totalLogs = 0;
 
 const csvWriter = createCsvWriter({
